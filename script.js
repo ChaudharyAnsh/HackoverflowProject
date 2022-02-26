@@ -55,7 +55,7 @@ function correctAnswer() {
 
     for (var i = 0; i < n; i++) {
         document.querySelectorAll('.grid-item')[i].style.removeProperty('visibility');
-        document.querySelectorAll('.grid-item')[i].style.setProperty('background-color', 'rgb {' + correct_color.substring(5, correct_color.length - 7) + ' }');
+        document.querySelectorAll('.grid-item')[i].style.setProperty('background-color', correct_color);
         document.querySelectorAll('.grid-item')[i].style.removeProperty('border-color');
         document.querySelectorAll('.grid-item')[i].style.removeProperty('color');
     }
